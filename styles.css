@@ -1,0 +1,813 @@
+/* -------------------- CSS BY NAME -------------------------------------- */
+/*-------------------JaImE LeE cReTa---------------------------------*/
+
+/* -------------------- IMPORTED FONTS -------------------- */
+@import url(https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400);
+
+
+/*-------------------- CSS RESET ---------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/*------------------------- HTML5 display-role reset---------------------------------------------------------*/
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* -------------------- ROOT VARIABLES  -------------------- */
+:root {
+    font-family:'Montserrat',sans-serif;
+    font-size:16px;
+    --black:#0D0D0D;
+    --white:#F2F2F2;
+    --darker-green:#7ABFBF;
+    --mint-green: rgba(122, 191, 191, .5);
+    --orange:#EB5428;
+}
+
+
+/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+* {
+    transition: all 0.3s ease;
+}
+html {
+    background-color: rgba(122,191,191,.5);
+}
+
+body {
+    background-color: #F2F2F2;
+    width: 414px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+}
+
+
+header {
+    text-align: center;
+    padding-top: 150px;
+    
+}
+
+
+header p {
+    padding: 10px;
+    text-align: left;
+}
+
+menu {
+    display: flex;
+    list-style-type: none;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+#street-tacos, img {
+    width: 100%;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #EB5428;
+    transition: background-color 1s;
+}
+
+#menu li a:hover {
+    background-color: #EB5428;
+    color: #F2F2F2;
+}
+
+#logo {
+    background-color: #EB5428;
+    min-width: 180px;
+    min-height: 78px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    left: 125px;
+    padding: 0px;
+   
+}
+
+#sign-in {
+    display: flex;
+    position: absolute;
+    top: 1px;
+    left: 275px;
+    min-width: 100%;
+    
+    
+}
+
+a, #sign-in {
+    flex-direction: column;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    align-items: center;
+    padding-top: 0px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+}
+
+
+nav {
+    grid-area: nav;
+    min-width: 10px;
+    background-color: #F2F2F2;;
+    box-shadow: 0px 3px 3px #bbb;
+    position: absolute;
+    top: 0px;
+    z-index: 5;
+}
+
+nav ul {
+    grid-area: hamburger;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+    max-height: 0;
+}
+
+nav li img {
+    display: none;
+}
+
+nav li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #EB5428;
+}
+
+nav li a:hover {
+    background-color: var(--mint-green);
+    color: var(--white);
+    transition: background-color .5s;
+}
+
+nav label {
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+    position: relative;
+    bottom: 15px;
+    left: 30px;
+}
+
+nav span {
+    display: block;
+    position: relative;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+nav label svg {
+    display: block;
+    padding-top: 0px;
+}
+
+label span:before, label span after {
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+nav input {
+    display: none;
+}
+
+nav, input:checked ~ ul {
+    max-height: 550px;
+}
+
+nav h2 {
+    visibility: hidden;
+    height: 1px;
+    width: 1px;
+}
+
+
+div#details-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+}
+#details-list dt, dd {
+    
+    display: inline-block;
+    padding-bottom: 10px;
+}    
+   
+#details-list dt {
+padding-right: 15px
+}
+
+
+ #details-list dd {
+    font-weight: normal;
+ }   
+
+
+.ingredients h2 {
+    text-align: center;
+    padding: 7px;
+}
+
+ul.ingredient-list {
+    display: block;
+    padding: 5px;
+    margin-left: 20px;
+    list-style-type: disc;
+}
+.ingredients, li{
+    padding: 10px;
+}
+
+
+.directions, h2 {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+    
+}
+ ol {
+    list-style-type: decimal;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: 0 auto;
+
+ } 
+
+.directions, ol, li {
+    padding: 0px;
+    padding-bottom: 10px;
+}
+
+.directions li {
+ 
+     margin-left: 40px;
+}
+
+
+main p {
+    padding: 10px;
+    
+}
+
+
+
+.dish-text {
+    padding-left: 15px;
+    
+}
+
+.dish-text h4 {
+    display: none;
+}
+.dish-text dd {
+    display: none;
+}   
+
+aside, #side-dishes{
+    background-color: var(--darker-green);
+    padding-top: 10px;
+    
+}
+
+aside, dl {
+    padding-left: 0px;
+    font-weight: bold;
+}
+
+aside, p {
+    font-weight: normal;
+}
+  
+.side-dish:hover {
+    background-color:  #EB5428;
+    color: #000000;
+    transition: background-color .5s;
+}
+
+.dish-image{
+
+    max-width: 100px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+#aside {
+    background-color: var(--darker-green);
+}
+
+.side-dish {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto; 
+    gap: 0px; 
+    padding: 0px;
+}
+
+.side-dish {
+ 
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+p.info{
+    padding-top: 10px;
+}
+
+div .stars{
+padding-top: 10px;
+}
+
+
+form {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    position: absolute;
+    top: 70px;
+
+}
+
+form input {
+    width: 250px;
+    padding: 9px;
+    border: 2px solid #EB5428;
+    border-radius: 3px;
+}
+
+form button {
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #EB5428;
+    border-color:#0D0D0D;
+    width: 40px;
+    height: 36px;
+
+}
+
+fieldset.searchbar {
+    display: none;
+}
+
+form, svg {
+    color: #F2F2F2;
+}
+
+
+footer {
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+   
+}
+footer h2, #connect {
+    display: none;
+}
+footer h3, #connect {
+    display: none;
+}
+
+footer ul {
+   display: flex; 
+   flex-direction: row;
+   padding-left: 25px;
+
+ 
+}
+
+footer li:hover {
+    color: var(--mint-green);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+footer img {
+    padding-top: 20px;
+    
+    
+   
+   
+}
+
+footer p, small {
+    text-align: center;
+    font-weight: 700;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+/*-------------------------------medium--------------------------------------------------*/
+
+@media screen and (min-width: 768px) {
+    body {
+        width: 768px;
+    }
+
+  
+    
+
+
+    h1 {
+        text-align: left;
+        padding-top: 80px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+        
+    }
+
+   
+    form{
+        position: absolute;
+        top: 5px;
+        left: 45%;
+        transform: translateX(-50%);
+        z-index: 10;
+       display: flex;
+        gap: 5px;
+        
+    }
+
+
+
+    
+    nav {
+        min-width: 767px;
+        height: 187px;
+        
+
+    }
+        
+     
+    nav ul {
+        overflow: visible;
+        max-height: 50px;
+        max-width: 50px;
+        display: flex;
+        position: absolute;
+        top: 0px;
+        
+    }
+        
+     
+    nav li img {
+        visibility: visible;
+        display: inline-block;
+        width: 50px;
+        object-fit: cover;
+
+    }
+
+    nav li a {
+        position: relative;
+        top: 80px;
+        font-size: 17px;
+        font-weight: bold;
+        align-items: center;
+       
+    }
+   
+    nav label {
+        display: none;
+        
+        
+    }
+
+    nav label span {
+        display: none;
+    }
+
+    nav label svg {
+        display: none;
+    }
+
+    label span:before, label span:after {
+        display: none;
+    }
+
+    nav input {
+        display: none;
+    }
+
+ 
+    #sign-in {
+        margin-left: 350px;
+        color: #000000;
+     
+        
+        
+    }
+    #sign-in span{
+        font-weight: bolder;
+        word-break:normal;
+    }
+
+    #logo {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: auto;
+        z-index: 10;
+    
+    }
+
+    menu {
+        padding-top: 20px;
+        
+        
+    }
+
+    #side-dishes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto); 
+        gap: 20px; 
+        padding: 10px; 
+       padding-right: 20px;
+    }
+    .side-dish {
+        border: 1px solid #ccc; 
+        text-align: center; 
+    }
+   
+            
+
+    #details-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--black);
+        background-color: var(--white);
+
+
+    }
+    h2#ingredients {
+    display: inline-block;
+   
+    }
+    .directions {
+        display: inline-block;
+    }
+    .grid {
+        display: grid;
+        grid-template-areas:
+        "ingredients directions"
+        "ingredient-list directions-list";
+        gap: 20px; 
+        padding-left: 40px;
+        padding-bottom: 30px;
+    }
+    
+    #ingredients {
+      
+        text-align: center; 
+    }
+    
+    #directions {
+        
+        text-align: center; 
+    }
+    
+    .ingredient-list {
+        grid-area: ingredient-list; 
+    }
+    
+    .Directions {
+        grid-area: directions-list; 
+    }
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 20px 0;
+       
+        
+    }
+    section, .social-media {
+    margin-left: 50px;
+    }
+    
+    footer img {
+        width: 175px;
+        
+       margin-left: 0px;
+    }
+
+    footer p {
+        text-align: left;
+        margin-left: 80px;
+        
+    }
+}
+/*------------------------------------------media query large---------------*/
+    @media screen and (min-width: 1280px) {
+        
+        body {
+            width: 1280px;
+        }
+    
+        main {
+            display: block;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-top: 40px;
+            display: inline-block;
+            grid-area: h1;
+            
+            
+        }
+    
+        header {
+            display: grid;
+            grid-template-areas:
+            "h1 h1 h1"
+            "menu tacos intro";
+            
+        }
+    
+    
+        nav {
+            min-width: 1280px;
+            height: 129px;
+        }
+    
+        nav ul {
+            justify-content: space-between;
+            
+    
+        }
+    
+        nav li a {
+            position: relative;
+            margin-right: 20px;
+            top: 10px;
+            left: 200px;
+            
+        }
+    
+        #logo {
+            position: absolute;
+            height: 123px;
+            width: 90px;
+        }
+    
+    
+        #sign-in {
+            margin-left: 880px;
+    
+        }
+        
+        form{
+            position: absolute;
+            top: 160px;
+            left: 45%;
+            transform: translateX(-50%);
+            z-index: 10;
+            gap: 5px;
+            
+        }
+        
+        div#details-list {
+            display: flex;
+            flex-direction: row;
+            padding-left: 5px;
+            padding-top: 38px;
+            padding-bottom: 38px;
+            padding-left: 40px;
+            background-color: var(--black);
+            color: #7ABFBF;
+
+        }
+        #details-list dt, dd {
+            
+            display: inline-block;
+            padding-bottom: 10px;
+
+        }    
+        #details-list dt {
+        padding-right: 10px;
+        }
+        #details-list h2 {
+        padding-right: 40px;
+
+        }
+        #details-list dd {
+            padding-right: 10px;
+        }
+
+        menu {
+            display: block;
+            position: static;
+            width: 120px;
+            border: 2px solid #EB5428;
+            height: 680px;
+            grid-area: menu;
+    
+        }
+       
+        #intro {
+            display: block;
+            grid-area: intro;
+            
+            }
+        aside#side-dishes {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        
+           
+        
+        #tacos {
+            width: 100px;
+        }
+
+        footer {
+            justify-content: space-between;
+        }
+    
+        footer ul {
+            width: 150%;
+            margin-left: 50px;
+            padding-right: 30px;
+        }
+    
+        footer img {
+            margin: 10px;
+            width: 350px;
+        }
+    }  
