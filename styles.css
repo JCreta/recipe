@@ -1,3 +1,10 @@
+/* -------------------- CSS BY NAME -------------------------------------- */
+/*-------------------JaImE LeE cReTa---------------------------------*/
+
+/* -------------------- IMPORTED FONTS -------------------- */
+@import url(https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400);
+
+
 /*-------------------- CSS RESET ---------------------------------------------------*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -215,6 +222,10 @@ nav label {
     left: 30px;
 }
 
+span {
+    width:max-content;
+}
+
 nav span {
     display: block;
     position: relative;
@@ -255,6 +266,7 @@ div#details-list {
     flex-direction: column;
     padding-left: 5px;
 }
+
 #details-list dt, dd {
     
     display: inline-block;
@@ -453,6 +465,10 @@ footer ul {
  
 }
 
+div#cr{
+    display:block;
+}
+
 footer li:hover {
     color: var(--mint-green);
     transform: scale(1.1);
@@ -464,9 +480,10 @@ footer li:hover {
     flex-direction: column;
     align-items: center;
     font-weight: bold;
+    flex-basis: 30%;
 }
 #taco-dude-footer img {
-    width: 50%;
+    width: 55%;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -577,16 +594,20 @@ footer li:hover {
         position: absolute;
         top: 0px;
         left: 0px;
-        height: auto;
+        height: 80px;
         z-index: 10;
     
     }
 
     menu {
         padding-top: 20px;
-        
+        position: absolute;
+        width: 168px;
+        background-color: rgba(255, 255, 255, 0.65);
+        width: 748px;
         
     }
+
 
     #side-dishes {
         display: grid;
@@ -594,7 +615,7 @@ footer li:hover {
         grid-template-rows: repeat(2, auto); 
         gap: 20px; 
         padding: 10px; 
-       padding-right: 20px;
+        padding-right: 20px;
     }
     .side-dish {
         border: 1px solid #ccc; 
@@ -652,9 +673,14 @@ footer li:hover {
         display: flex;
         flex-direction: row-reverse;
         padding: 20px 0;
-       
-        
     }
+    
+    section.social-media {
+        padding-right: 20px;
+
+    }  
+        
+    
     
     footer img {
         width: 175px;
@@ -679,13 +705,16 @@ footer li:hover {
             display: block;
         }
         
+        
         h1 {
             text-align: center;
             margin-top: 40px;
             display: inline-block;
             grid-area: h1;
-            
-            
+        }
+       
+        div#description{
+            line-height: 2.5;
         }
     
         header {
@@ -737,18 +766,38 @@ footer li:hover {
             gap: 5px;
             
         }
+        section#details-list{
+        background-color: var(--black);
+        color: #7ABFBF;
+        padding-top: 20px;
+        }
+         
+        #details-list dd {
+    
+            display: block;
+            padding-bottom: 10px;
+        }    
+        #details-list dt { 
+        display: block;
+        padding-bottom: 10px;
+        }
+
         
-        div#details-list {
+        div#dl {
             display: flex;
             flex-direction: row;
-            padding-left: 5px;
             padding-top: 38px;
             padding-bottom: 38px;
-            padding-left: 40px;
             background-color: var(--black);
             color: #7ABFBF;
+            
 
         }
+        
+        #logo {
+        height: 128px;
+        }
+        
         #details-list dt, dd {
             
             display: inline-block;
@@ -760,10 +809,15 @@ footer li:hover {
         }
         #details-list h2 {
         padding-right: 40px;
+        display:flex;
 
         }
         #details-list dd {
             padding-right: 10px;
+        }
+
+        aside, dl {
+            padding-right: 87px;
         }
 
         menu {
@@ -771,8 +825,9 @@ footer li:hover {
             position: static;
             width: 120px;
             border: 2px solid #EB5428;
-            height: 680px;
+            
             grid-area: menu;
+            height: 720px;
     
         }
        
@@ -792,18 +847,21 @@ footer li:hover {
             width: 100px;
         }
 
+       
+
         footer {
+            display: flex;
+            padding: 43px 0;
+            flex-wrap: wrap;
+            flex-direction: row-reverse;
             justify-content: space-between;
         }
-    
-        footer ul {
-           
-            margin-left: 50px;
-            padding-right: 30px;
-        }
-    
-        footer img {
-            margin: 10px;
-            width: 350px;
-        }
-    }  
+
+
+        #taco-dude-footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+    }
+}
