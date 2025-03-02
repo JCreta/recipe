@@ -331,6 +331,9 @@ main p {
 .dish-text dd {
     display: none;
 }   
+ section.side-dish {
+    margin: 0px;        
+}
 
 aside, #side-dishes{
     background-color: var(--darker-green);
@@ -353,7 +356,7 @@ aside, p {
     transition: background-color .5s;
 }
 
-.dish-image{
+.dish-image {
 
     max-width: 100px;
     padding-left: 10px;
@@ -479,9 +482,6 @@ footer p, small {
     }
 
   
-    
-
-
     h1 {
         text-align: left;
         padding-top: 80px;
@@ -602,10 +602,11 @@ footer p, small {
     .side-dish {
         border: 1px solid #ccc; 
         text-align: center; 
+     
+     section.side-dish {
+        margin: 0px;        
     }
-   
-            
-
+	    
     #details-list {
         display: flex;
         flex-direction: column;
