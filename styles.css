@@ -474,7 +474,7 @@ footer p, small {
     padding-top: 15px;
     padding-bottom: 5px;
 }
-
+}
 /*-------------------------------medium--------------------------------------------------*/
 
 @media screen and (min-width: 768px) {
@@ -671,7 +671,7 @@ footer p, small {
         margin-left: 80px;
         
     }
-
+}
 /*------------------------------------------media query large---------------*/
     @media screen and (min-width: 1280px) {
         
