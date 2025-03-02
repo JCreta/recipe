@@ -448,6 +448,7 @@ footer ul {
    display: flex; 
    flex-direction: row;
    padding-left: 25px;
+   justify-content: flex-end;
 
  
 }
@@ -799,7 +800,7 @@ footer p, small {
         }
     
         footer ul {
-            width: 150%;
+           
             margin-left: 50px;
             padding-right: 30px;
         }
