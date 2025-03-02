@@ -209,9 +209,8 @@ menu {
     display: flex;
     position: absolute;
     top: 1px;
-    left: 275px;
-    min-width: 100%;
-    
+    left: 306px;
+    min-width: 67%;
     
 }
 
@@ -222,7 +221,7 @@ a, #sign-in {
     text-decoration: none;
     align-items: center;
     padding-top: 0px;
-    padding-right: 5px;
+    padding-right: 0px;
     padding-bottom: 0px;
 }
 
@@ -629,7 +628,7 @@ nav input {
 
 
 #sign-in {
-    margin-left: 350px;
+    margin-left: 338px;
     color: #000000;
 }
 
