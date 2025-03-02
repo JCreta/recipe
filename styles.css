@@ -107,6 +107,56 @@ h3 {
     font-weight: 400;
 }
 
+p{
+    font-family: "Montserrat";
+    font-size: 16px;
+}
+
+dd{
+    font-family: "Montserrat";
+    font-size: 16px;
+}
+li{
+    font-family: "Montserrat";
+    font-size: 16px;
+}
+
+nav{
+    font-family: "Montserrat";
+    font-size: 16px;
+    }
+input { 
+    font-family: "Montserrat";
+    font-size: 16px;
+}
+
+dt {
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a {
+    font-size: 20px;
+    font-family: 'Bebas Neue';
+}
+nav span {
+    font-size: 20px;
+    font-family: 'Bebas Neue';
+}
+
+menu li {
+    font-size: 20px;
+    font-family: 'Bebas Neue';
+}
+#social li {
+    font-size: 20px;
+    font-family: 'Bebas Neue';
+}
+footer {
+    font-size: 20px;
+    font-family: 'Bebas Neue';
+}
 
 header {
     text-align: center;
@@ -274,7 +324,7 @@ div#details-list {
 }    
    
 #details-list dt {
-padding-right: 15px
+    padding-right: 15px
 }
 
 
@@ -399,7 +449,7 @@ p.info{
 }
 
 div .stars{
-padding-top: 10px;
+    padding-top: 10px;
 }
 
 
@@ -443,8 +493,7 @@ form, svg {
 
 
 footer {
-    font-family: 'Bebas Neue';
-    font-size: 20px;
+   
     padding-top: 20px;
     padding-bottom: 10px;
    
@@ -491,377 +540,379 @@ footer li:hover {
 /*-------------------------------medium--------------------------------------------------*/
 
 @media screen and (min-width: 768px) {
-    body {
-        width: 768px;
-    }
 
-  
-    h1 {
-        text-align: left;
-        padding-top: 80px;
-        padding-left: 15px;
-        padding-bottom: 20px;
-        
-    }
-
-   
-    form{
-        position: absolute;
-        top: 5px;
-        left: 45%;
-        transform: translateX(-50%);
-        z-index: 10;
-       display: flex;
-        gap: 5px;
-        
-    }
+body {        
+    width: 768px;
+}
 
 
+h1 {
+    text-align: left;
+    padding-top: 80px;
+    padding-left: 15px;
+    padding-bottom: 20px;
 
-    
-    nav {
-        min-width: 767px;
-        height: 187px;
-        
-
-    }
-        
-     
-    nav ul {
-        overflow: visible;
-        max-height: 50px;
-        max-width: 50px;
-        display: flex;
-        position: absolute;
-        top: 0px;
-        
-    }
-        
-     
-    nav li img {
-        visibility: visible;
-        display: inline-block;
-        width: 50px;
-        object-fit: cover;
-
-    }
-
-    nav li a {
-        position: relative;
-        top: 80px;
-        font-size: 17px;
-        font-weight: bold;
-        align-items: center;
-       
-    }
-   
-    nav label {
-        display: none;
-        
-        
-    }
-
-    nav label span {
-        display: none;
-    }
-
-    nav label svg {
-        display: none;
-    }
-
-    label span:before, label span:after {
-        display: none;
-    }
-
-    nav input {
-        display: none;
-    }
-
- 
-    #sign-in {
-        margin-left: 350px;
-        color: #000000;
-     
-        
-        
-    }
-    #sign-in span{
-        font-weight: bolder;
-        word-break:normal;
-    }
-
-    #logo {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        height: 80px;
-        z-index: 10;
-    
-    }
-
-    menu {
-        padding-top: 20px;
-        position: absolute;
-        width: 168px;
-        background-color: rgba(255, 255, 255, 0.65);
-        width: 748px;
-        
-    }
+}
 
 
-    #side-dishes {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, auto); 
-        gap: 20px; 
-        padding: 10px; 
-        padding-right: 20px;
-    }
-    .side-dish {
-        border: 1px solid #ccc; 
-        text-align: center; 
-    }
-     
-     section.side-dish {
-        margin: 0px;        
-    }
-	    
-    #details-list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: var(--black);
-        background-color: var(--white);
+form{
+    position: absolute;
+    top: 5px;
+    left: 45%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    gap: 5px;
+
+}
 
 
-    }
-    h2#ingredients {
+
+
+nav {
+    min-width: 767px;
+    height: 187px;
+
+
+}
+
+
+nav ul {
+    overflow: visible;
+    max-height: 50px;
+    max-width: 50px;
+    display: flex;
+    position: absolute;
+    top: 0px;
+
+}
+
+
+nav li img {
+    visibility: visible;
     display: inline-block;
-   
-    }
-    .directions {
-        display: inline-block;
-    }
-    .grid {
-        display: grid;
-        grid-template-areas:
-        "ingredients directions"
-        "ingredient-list directions-list";
-        gap: 20px; 
-        padding-left: 40px;
-        padding-bottom: 30px;
-    }
-    
-    #ingredients {
-      
-        text-align: center; 
-    }
-    
-    #directions {
-        
-        text-align: center; 
-    }
-    
-    .ingredient-list {
-        grid-area: ingredient-list; 
-    }
-    
-    .Directions {
-        grid-area: directions-list; 
-    }
-    footer {
-        display: flex;
-        flex-direction: row-reverse;
-        padding: 20px 0;
-    }
-    
-    section.social-media {
-        padding-right: 20px;
+    width: 50px;
+    object-fit: cover;
 
-    }  
-        
-    
-    
-    footer img {
-        width: 175px;
-        
-       margin-left: 0px;
+}
+
+nav li a {
+    position: relative;
+    top: 80px;
+    font-size: 17px;
+    font-weight: bold;
+    align-items: center;
+
+}
+
+nav label {
+    display: none;
+
+
+}
+
+nav label span {
+    display: none;
+}
+
+nav label svg {
+     display: none;
+}
+
+label span:before, label span:after {
+    display: none;
+}
+
+nav input {
+     display: none;
+}
+
+
+#sign-in {
+    margin-left: 350px;
+    color: #000000;
+}
+
+#sign-in span{
+    font-weight: bolder;
+    word-break:normal;
+}
+
+#logo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 80px;
+    z-index: 10;
+
+}
+
+menu {
+    padding-top: 20px;
+    position: absolute;
+    width: 168px;
+    background-color: rgba(255, 255, 255, 0.65);
+    width: 748px;
+
+}
+
+
+#side-dishes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto); 
+    gap: 20px; 
+    padding: 10px; 
+    padding-right: 20px;
+}
+
+.side-dish {
+    border: 1px solid #ccc; 
+    text-align: center; 
+}
+
+section.side-dish {
+    margin: 0px;        
+}
+
+#details-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--black);
+    background-color: var(--white);
+
+
+}
+h2#ingredients {
+    display: inline-block;
+
+}
+.directions {
+    display: inline-block;
     }
 
-    footer p {
-        text-align: left;
-        margin-left: 80px;
-        
-    }
+.grid {
+    display: grid;
+    grid-template-areas:
+    "ingredients directions"
+    "ingredient-list directions-list";
+    gap: 20px; 
+    padding-left: 40px;
+    padding-bottom: 30px;
+}
+
+#ingredients {
+
+    text-align: center; 
+}
+
+#directions {
+
+    text-align: center; 
+}
+
+.ingredient-list {
+    grid-area: ingredient-list; 
+}
+
+.Directions {
+    grid-area: directions-list; 
+}
+
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px 0;
+}
+
+section.social-media {
+    padding-right: 20px;
+
+}  
+
+
+
+footer img {
+    width: 175px;
+    margin-left: 0px;
+}
+
+footer p {
+    text-align: left;
+    margin-left: 80px;
+
+}
 }
 /*------------------------------------------media query large---------------*/
-    @media screen and (min-width: 1280px) {
-        
-        body {
-            width: 1280px;
-        }
-    
-        main {
-            display: block;
-        }
-        
-        
-        h1 {
-            text-align: center;
-            margin-top: 40px;
-            display: inline-block;
-            grid-area: h1;
-        }
-       
-        div#description{
-            line-height: 2.5;
-        }
-    
-        header {
-            display: grid;
-            grid-template-areas:
-            "h1 h1 h1"
-            "menu tacos intro";
-            
-        }
-    
-    
-        nav {
-            min-width: 1280px;
-            height: 129px;
-        }
-    
-        nav ul {
-            justify-content: space-between;
-            
-    
-        }
-    
-        nav li a {
-            position: relative;
-            margin-right: 20px;
-            top: 10px;
-            left: 200px;
-            
-        }
-    
-        #logo {
-            position: absolute;
-            height: 123px;
-            width: 90px;
-        }
-    
-    
-        #sign-in {
-            margin-left: 880px;
-    
-        }
-        
-        form{
-            position: absolute;
-            top: 160px;
-            left: 45%;
-            transform: translateX(-50%);
-            z-index: 10;
-            gap: 5px;
-            
-        }
-        section#details-list{
-        background-color: var(--black);
-        color: #7ABFBF;
-        padding-top: 20px;
-        }
-         
-        #details-list dd {
-    
-            display: block;
-            padding-bottom: 10px;
-        }    
-        #details-list dt { 
-        display: block;
-        padding-bottom: 10px;
-        }
+@media screen and (min-width: 1280px) {
 
-        
-        div#dl {
-            display: flex;
-            flex-direction: row;
-            padding-top: 38px;
-            padding-bottom: 38px;
-            background-color: var(--black);
-            color: #7ABFBF;
-            
+body {
+    width: 1280px;
+}
 
-        }
-        
-        #logo {
-        height: 128px;
-        }
-        
-        #details-list dt, dd {
-            
-            display: inline-block;
-            padding-bottom: 10px;
-
-        }    
-        #details-list dt {
-        padding-right: 10px;
-        }
-        #details-list h2 {
-        padding-right: 40px;
-        display:flex;
-
-        }
-        #details-list dd {
-            padding-right: 10px;
-        }
-
-        aside, dl {
-            padding-right: 87px;
-        }
-
-        menu {
-            display: block;
-            position: static;
-            width: 120px;
-            border: 2px solid #EB5428;
-            
-            grid-area: menu;
-            height: 720px;
-    
-        }
-       
-        #intro {
-            display: block;
-            grid-area: intro;
-            
-            }
-        aside#side-dishes {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-        }
-        
-           
-        
-        #tacos {
-            width: 100px;
-        }
-
-       
-
-        footer {
-            display: flex;
-            padding: 43px 0;
-            flex-wrap: wrap;
-            flex-direction: row-reverse;
-            justify-content: space-between;
-        }
+main {
+    display: block;
+}
 
 
-        #taco-dude-footer {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 20px;
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    display: inline-block;
+    grid-area: h1;
+}
+
+div#description{
+    line-height: 2.5;
+}
+
+header {
+    display: grid;
+    grid-template-areas:
+    "h1 h1 h1"
+    "menu tacos intro";
+    
+}
+
+
+nav {
+    min-width: 1280px;
+    height: 129px;
+}
+
+nav ul {
+    justify-content: space-between;
+    
+
+}
+
+nav li a {
+    position: relative;
+    margin-right: 20px;
+    top: 10px;
+    left: 200px;
+    
+}
+
+#logo {
+    position: absolute;
+    height: 123px;
+    width: 90px;
+}
+
+
+#sign-in {
+    margin-left: 880px;
+
+}
+
+form{
+    position: absolute;
+    top: 160px;
+    left: 45%;
+    transform: translateX(-50%);
+    z-index: 10;
+    gap: 5px;
+    
+}
+section#details-list{
+    background-color: var(--black);
+    color: #7ABFBF;
+    padding-top: 20px;
+}
+    
+#details-list dd {
+
+    display: block;
+    padding-bottom: 10px;
+}    
+#details-list dt { 
+    display: block;
+    padding-bottom: 10px;
+}
+
+
+div#dl {
+    display: flex;
+    flex-direction: row;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    background-color: var(--black);
+    color: #7ABFBF;
+    
+
+}
+
+#logo {
+    height: 128px;
+}
+
+#details-list dt, dd {
+    
+    display: inline-block;
+    padding-bottom: 10px;
+
+}    
+#details-list dt {
+    padding-right: 10px;
+}
+
+#details-list h2 {
+    padding-right: 40px;
+    display:flex;
+
+}
+#details-list dd {
+    padding-right: 10px;
+}
+
+aside, dl {
+    padding-right: 87px;
+}
+
+menu {
+    display: block;
+    position: static;
+    width: 120px;
+    border: 2px solid #EB5428;
+    
+    grid-area: menu;
+    height: 720px;
+
+}
+
+#intro {
+    display: block;
+    grid-area: intro;
+    
+    }
+aside#side-dishes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+    
+
+#tacos {
+    width: 100px;
+}
+
+
+
+footer {
+    display: flex;
+    padding: 43px 0;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+
+#taco-dude-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
     }
 }
