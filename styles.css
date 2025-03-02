@@ -1,8 +1,8 @@
-/* -------------------- CSS BY NAME -------------------------------------- */
-/*-------------------JaImE LeE cReTa---------------------------------*/
-
-/* -------------------- IMPORTED FONTS -------------------- */
-@import url(https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400);
+/*-------------------- CSS RESET ---------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
 
 /*-------------------- CSS RESET ---------------------------------------------------*/
@@ -458,6 +458,7 @@ footer li:hover {
     transform: scale(1.1);
     transition: all 0.3s ease;
 }
+
 #taco-dude-footer {
     display: flex;  
     flex-direction: column;
@@ -468,8 +469,6 @@ footer li:hover {
     width: 50%;
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
 }
 
 /*-------------------------------medium--------------------------------------------------*/
