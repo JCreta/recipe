@@ -458,23 +458,20 @@ footer li:hover {
     transform: scale(1.1);
     transition: all 0.3s ease;
 }
-
-footer img {
-    padding-top: 20px;
-    
-    
-   
-   
+#taco-dude-footer {
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+#taco-dude-footer img {
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-footer p, small {
-    text-align: center;
-    font-weight: 700;
-    display: block;
-    padding-top: 15px;
-    padding-bottom: 5px;
-}
-}
+/
+
 /*-------------------------------medium--------------------------------------------------*/
 
 @media screen and (min-width: 768px) {
