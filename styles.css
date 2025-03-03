@@ -454,15 +454,17 @@ div .stars{
 }
 
 
-form {
-    padding-top: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    margin-left: 70px;
-    position: absolute;
-    top: 70px;
+form button {
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
+    background-color: #EB5428;
+    width: 40px;
+    border-color: #eb5428;
+    height: 40px;
+
+}
 
 }
 
