@@ -93,12 +93,14 @@ h1 {
     font-size: 40px;
     font-family: 'Bebas Neue';
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 h2 {
     font-size: 30px;
     font-family: 'Bebas Neue';
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -773,7 +775,10 @@ header {
     "menu tacos intro";
     
 }
+menu li {
+    padding: 25px;
 
+}
 
 nav {
     min-width: 1280px;
