@@ -95,6 +95,7 @@ h1 {
     font-weight: 400;
     text-transform: uppercase;
     font-weight: bold;
+    padding-top: 10px;
 }
 
 h2 {
@@ -178,7 +179,7 @@ header p {
 menu {
     display: flex;
     list-style-type: none;
-    padding: 10px;
+    padding: 20px;
     justify-content: space-between;
     text-transform: uppercase;
 }
@@ -210,7 +211,7 @@ nav li span:last-child {
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 0px;
+    top: 1px;
     left: 106px;
     padding: 0px;
 }
@@ -231,7 +232,7 @@ a, #sign-in {
     display: flex;
     position: absolute;
     top: 4px;
-    left: 305px;
+    left: 318px;
     
 }
     
@@ -298,7 +299,9 @@ nav label {
 }
 
 span {
-    width:max-content;
+    display: block;
+    padding-left: 5px;
+    width: max-content;
 }
 
 nav span {
@@ -311,7 +314,7 @@ nav span {
 nav label svg {
     display: block;
     padding-top: 0px;
-    padding-left: 9px;
+   
 }
 
 label span:before, label span after {
@@ -328,7 +331,7 @@ nav input {
 
 nav, input:checked ~ ul {
     max-height: 583px;
-}
+}   
 
 
 
@@ -398,7 +401,7 @@ ul.ingredient-list {
  } 
 
 .directions, ol, li {
-    padding: 0px;
+    
     padding-bottom: 10px;
 }
 
@@ -516,8 +519,8 @@ form button {
     border-radius: 0px 5px 5px 0px;
     background-color: #EB5428;
     width: 40px;
-    border-color: #eb5428;
     height: 40px;
+    border-color:orangered
 
 }
 
@@ -596,13 +599,11 @@ h1 {
 
 form{
     position: absolute;
-    top: 5px;
-    left: 45%;
     transform: translateX(-50%);
     z-index: 10;
     display: flex;
-    
-
+    top: 0px;
+    left: 55%;
 }
 
 
@@ -636,18 +637,19 @@ nav li img {
 }
 
 
-    nav li a {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        top: 101px;
-        font-size: 17px;
-        font-weight: bold;
-        align-items: center;
-        padding: 10px;
+nav li a {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 82px;
+    font-size: 17px;
+    font-weight: bold;
+    align-items: center;
+    padding: 15px;
+}
     
 
-}
+
 
 nav label {
     display: none;
@@ -684,8 +686,8 @@ nav input {
 
 #logo {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 1px;
+    left: 1px;
     height: 80px;
     z-index: 10;
 
@@ -694,9 +696,9 @@ nav input {
 menu {
     padding-top: 20px;
     position: absolute;
-    
+    padding: 1px;
     background-color: rgba(255, 255, 255, 0.65);
-    width: 748px;
+    width: 728px;
 
 }
 
@@ -931,11 +933,13 @@ menu {
     width: 120px;
     border: 2px solid #EB5428;
     grid-area: menu;
-    height: 726px;
+    height: 680px;
 
 }
 
-
+menu li span {
+    padding-left: 17px;
+}
 
 
 #intro {
@@ -978,4 +982,6 @@ section.social-media {
 
 }
 }
+
+
 
