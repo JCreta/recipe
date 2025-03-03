@@ -4,14 +4,6 @@
 /* -------------------- IMPORTED FONTS -------------------- */
 @import url('https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400');
 
-
-/*-------------------- CSS RESET ---------------------------------------------------*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-
 /*-------------------- CSS RESET ---------------------------------------------------*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -94,6 +86,7 @@ h1 {
     font-family: 'Bebas Neue';
     font-weight: 400;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 h2 {
@@ -107,11 +100,13 @@ h3 {
     font-size: 25px;
     font-family: 'Bebas Neue';
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 p{
     font-family: "Montserrat";
     font-size: 16px;
+
 }
 
 dd{
@@ -177,6 +172,7 @@ menu {
     list-style-type: none;
     padding: 10px;
     justify-content: space-between;
+    text-transform: uppercase;
 }
 
 #street-tacos, img {
@@ -194,27 +190,44 @@ menu {
     color: #F2F2F2;
 }
 
+nav li span:last-child {
+    padding-top: 2px;
+  }
+   
+
 #logo {
     background-color: #EB5428;
-    min-width: 180px;
-    min-height: 78px;
+    min-width: 205px;
+    min-height: 83px;
     display: flex;
     justify-content: center;
     position: absolute;
     top: 0px;
-    left: 125px;
+    left: 106px;
     padding: 0px;
-   
 }
 
+
+
+a, #sign-in {
+    flex-direction: column;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    align-items: center;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
 #sign-in {
     display: flex;
     position: absolute;
-    top: 1px;
-    left: 306px;
-    min-width: 67%;
-    
+    top: 4px;
+    left: 302px;
+    min-width: 52%;
 }
+    
+
 
 a, #sign-in {
     flex-direction: column;
@@ -236,6 +249,7 @@ nav {
     position: absolute;
     top: 0px;
     z-index: 5;
+    text-transform: uppercase;
 }
 
 nav ul {
@@ -259,7 +273,7 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: var(--mint-green);
+    background-color: var(--darker-green);
     color: var(--white);
     transition: background-color .5s;
 }
@@ -287,6 +301,7 @@ nav span {
 nav label svg {
     display: block;
     padding-top: 0px;
+    padding-left: 9px;
 }
 
 label span:before, label span after {
@@ -302,24 +317,27 @@ nav input {
 }
 
 nav, input:checked ~ ul {
-    max-height: 550px;
+    max-height: 583px;
 }
+
+
 
 nav h2 {
     visibility: hidden;
     height: 1px;
     width: 1px;
+    padding-top: 0px;
 }
+
 div#dl {
-   padding-left: 10px
+    padding-left: 15px;
 }
-
-
 div#details-list {
     display: flex;
     flex-direction: column;
     padding-left: 5px;
 }
+
 
 #details-list dt, dd {
     
@@ -399,6 +417,10 @@ main p {
 }   
  section.side-dish {
     margin: 0px;        
+}
+
+h2, aside {
+padding-top: 20px;
 }
 
 aside, #side-dishes{
@@ -540,6 +562,7 @@ footer li:hover {
     width: 55%;
     padding-top: 10px;
     padding-bottom: 10px;
+   
 }
 
 /*-------------------------------medium--------------------------------------------------*/
@@ -601,12 +624,17 @@ nav li img {
 
 }
 
-nav li a {
-    position: relative;
-    top: 80px;
-    font-size: 17px;
-    font-weight: bold;
-    align-items: center;
+
+    nav li a {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 101px;
+        font-size: 17px;
+        font-weight: bold;
+        align-items: center;
+        padding: 10px;
+    
 
 }
 
@@ -655,7 +683,7 @@ nav input {
 menu {
     padding-top: 20px;
     position: absolute;
-    width: 168px;
+    
     background-color: rgba(255, 255, 255, 0.65);
     width: 748px;
 
@@ -795,9 +823,9 @@ nav ul {
 nav li a {
     position: relative;
     margin-right: 20px;
-    top: 10px;
-    left: 200px;
-    
+    top: 25px;
+    left: 237px;
+
 }
 
 #logo {
@@ -873,6 +901,7 @@ div#dl {
 #details-list h2 {
     padding-right: 40px;
     display:flex;
+    padding-top: 25px;
 
 }
 #details-list dd {
@@ -888,11 +917,13 @@ menu {
     position: static;
     width: 120px;
     border: 2px solid #EB5428;
-    
     grid-area: menu;
     height: 726px;
 
 }
+
+
+
 
 #intro {
     display: block;
