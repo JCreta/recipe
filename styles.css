@@ -310,6 +310,9 @@ nav h2 {
     height: 1px;
     width: 1px;
 }
+div#dl {
+   padding-left: 10px
+}
 
 
 div#details-list {
